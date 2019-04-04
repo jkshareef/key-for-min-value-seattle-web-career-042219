@@ -6,10 +6,10 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   end
-    min = Float::INFINITY
+    smallest = Float::INFINITY
     name_hash.each do |key, value|
-      if value < min
-        min = value
+      if value < smallest
+        smallest = value
         pair = {key: value}
       end
     end
